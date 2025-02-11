@@ -1,13 +1,16 @@
 <template>
   <navbar></navbar>
+  <library></library>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import Library from "./components/Library.vue";
 
 export default {
   components: {
     Navbar,
+    Library
   },
 };
 </script>
@@ -77,18 +80,7 @@ body {
 .search input {
   border: 1px solid var(--secondary-text-clr);
   border-radius: 2rem;
-  padding: 0.5rem;
-}
-
-.search {
-  background-color: var(--accent-clr);
-  border: 4px solid var(--accent-clr);
-  border-radius: 2rem;
-}
-
-.search-btn:hover {
-  background-color: var(--accent-hover-clr);
-  border: 4px solid var(--accent-hover-clr);
+  padding: 0.75rem;
 }
 
 .btn {
